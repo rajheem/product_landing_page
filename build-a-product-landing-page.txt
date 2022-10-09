@@ -1,0 +1,292 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" />
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+          <a href="#video" class="nav-link">How it works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+      </header>
+   <main> 
+     
+  <div id="form-container">
+    <h2>Handcrafted, home-made masterpieces</h2> 
+    <form  id="form" method="post"
+    action="https://www.freecodecamp.com/email-submit">
+
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+             <input type="submit" id="submit" value="Get Started" />
+     
+  </form>
+    </div>
+    
+      <div id="features">
+        <div id="feat">
+        <div id="feat-icon">
+        <i class="fa fa-3x fa-fire"></i>
+        </div>
+        <div id="feat-desc">
+      <h2>Premium Materials</h2>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase</p>
+        </div>
+        </div>
+
+      <div id="feat">
+        <div id="feat-icon">
+          <i class="fa fa-3x fa-truck"></i>
+          </div>
+          
+          <div id="feat-desc">
+            <h2>Fast Shipping</h2>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div id="feat">
+        <div id="feat-icon">
+         <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+          
+          <div id="feat-desc">
+            <h2>
+Quality Assurance</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div>
+
+        </div>
+<div id="video_container">
+      <iframe id="video" width="520" height="345" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  
+  <div id="pricing">
+    <div id="trombone">
+      <div id="tenor">
+      <h2>TENOR TROMBONE</h2>
+      <h2> $600</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+      <button id="select">Select</button>
+        </div>
+
+        <div id="bass">
+      <h2>BASS TROMBONE</h2>
+      <h2> $1200</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+        <button id="select">Select</button>
+        </div>
+
+        <div id="valve">
+      <h2>VALVE TROMBONE</h2>
+      <h2> $2000</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        </ul>
+        <button id="select">Select</button>
+        </div>
+    </div>
+    </div> <footer>
+          <p>Copyright 2016, Original Trombones</p>
+          </footer>
+
+
+      </main>
+      
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  margin:0;
+  background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Add a top margin and padding to avoid content overlay */
+main{
+padding: 35px;
+  margin-top: 50px;
+}
+
+/*Logo and nav bar in  same line*/
+#header{
+  width: 100%;
+	height: 50px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0; 
+  background-color: #eee;
+    
+}
+/*Logo and nav bar in  same line*/
+#header-img{
+  width: max(20%, 18vw);
+  aspect-ratio: 35 / 4;
+	padding: 0.4rem;
+}
+/*Logo and nav bar in  same line*/
+#nav-bar{
+   width: 45%;
+	max-width: 45%;
+	height: 50px;
+  display: flex;
+justify-content: space-evenly;
+  flex-wrap: wrap;
+	align-items: center;
+padding-inline-start: 0;
+	margin-block: 0;
+}
+
+#nav-bar .nav-link{  text-decoration: none;
+color: black;
+}
+
+
+
+/*Center Heading, Input and Button*/
+#form-container{
+  display:flex;
+justify-content:center;
+flex-direction:column;
+align-items:center;
+}
+
+input[type="email"]{
+  padding:5px;
+  padding-right:60px;
+  
+}
+
+#submit{
+	display: block;
+  margin:5px auto;
+  padding:10px;
+	background: #d0d0d5;
+  border:none;
+  width:50%;
+  font-weight:bold;
+}
+
+#submit:hover {
+   background: orange;
+  /*background: #f1c40f;*/
+  color: black;
+}
+
+
+
+#feat{
+display:flex; 
+margin-bottom:30px;
+}
+
+#feat-icon{
+display:flex;
+justify-content:center;
+  align-items:center;  
+  width:10%;
+ margin-left:70px;
+color:orange;
+
+}
+
+#feat-desc{
+justify-content:center; flex-direction:column;
+ align-items:center;
+margin-left:10px;
+width:65%; 
+}
+
+#video_container{
+  text-align:center;
+  margin-bottom:80px;
+}
+
+#trombone{
+display:flex;
+justify-content:center;
+margin-bottom:60px;  
+
+}
+
+#tenor,#bass,#valve{
+ text-align: center;
+max-width:300px;
+padding-bottom:30px;
+padding-left:15px;
+padding-right:15px;
+border:solid 2px;
+margin: 0px 20px;
+
+
+}
+
+ul{
+  display: inline-block;
+text-align: left;
+
+margin-right:30px;
+list-style: none;
+}
+
+footer{
+  text-align:right;
+  background-color:#ddd;
+  padding:5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+#select{
+	display: block;
+  margin:5px auto;
+  padding:10px;
+	background: #d0d0d5;
+  border:none;
+  width:50%;
+  font-weight:bold;
+}
+
+#select:hover {
+   background: orange;
+  /*background: #f1c40f;*/
+  color: black;
+}
+
+** end of undefined **
+
